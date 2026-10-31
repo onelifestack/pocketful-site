@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pocketful.onelifestack.com/sitemap.xml
