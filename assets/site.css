@@ -89,6 +89,11 @@ section.tint { background: var(--primary-soft); }
 .gallery .phone { width: 100%; padding: 7px; border-radius: 32px; }
 .gallery .phone img { border-radius: 26px; }
 .gallery figcaption { margin-top: 12px; font-weight: 700; text-align: center; }
+.promo { margin: 0; max-width: 960px; }
+.promo-video { display: block; width: 100%; height: auto; border-radius: var(--radius); background: #FFF5EA; box-shadow: var(--shadow); }
+.promo .v9x16 { display: none; max-width: 360px; margin: 0 auto; }
+.promo figcaption { margin-top: 16px; color: var(--muted); font-size: 1rem; max-width: 42em; }
+@media (max-width: 700px) { .promo .v16x9 { display: none; } .promo .v9x16 { display: block; } }
 .two { display: grid; gap: 40px; grid-template-columns: 1fr 1fr; align-items: start; }
 .keep, .never { list-style: none; padding: 0; margin: 0; }
 .keep li, .never li { padding: 8px 0 8px 32px; position: relative; }

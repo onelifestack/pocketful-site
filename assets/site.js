@@ -8,7 +8,7 @@
 
   // Scroll reveal (only when motion is welcome).
   if (!calm && "IntersectionObserver" in window) {
-    const sel = ".section-head, .tile, .steps li:not(.keep-still), .panel, details, .gallery figure, .promise li, .article h2, .press-grid > *";
+    const sel = ".section-head, .tile, .steps li:not(.keep-still), .panel, details, .gallery figure, .promo, .promise li, .article h2, .press-grid > *";
     const skip = (el) => el.closest(".how");
     const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
     $$(sel).filter((el) => !skip(el)).forEach((el) => {
