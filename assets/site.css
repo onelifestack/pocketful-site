@@ -143,8 +143,9 @@ footer.site small { display: block; margin-top: 22px; grid-column: 1 / -1; }
 .facts dt { font-weight: 800; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 .facts dd { margin: 0; font-weight: 700; }
 .hash { display: block; word-break: break-all; background: var(--primary-soft); padding: 10px 12px; border-radius: 12px; font-size: .85rem; }
-ol.install { padding-left: 1.3em; }
-ol.install li { margin-bottom: .6em; }
+.news-one { max-width: 720px; }
+.news-one ul, #new .panel ul { padding-left: 1.2em; margin: 0; }
+.news-one li, #new .panel li { margin-bottom: .5em; }
 
 /* ---------- hero art ---------- */
 .hero-art { position: relative; display: grid; place-items: center; min-height: 540px; }
