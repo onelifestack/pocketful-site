@@ -1,0 +1,14 @@
+[
+ {
+  "relation": [
+   "delegate_permission/common.handle_all_urls"
+  ],
+  "target": {
+   "namespace": "android_app",
+   "package_name": "com.onelifestack.pocketful",
+   "sha256_cert_fingerprints": [
+    "CC:74:5A:C7:7C:F5:DF:24:6F:36:17:39:F6:EB:26:90:0B:5D:7F:18:95:69:39:D6:EA:DA:C5:60:8D:39:B5:4F"
+   ]
+  }
+ }
+]

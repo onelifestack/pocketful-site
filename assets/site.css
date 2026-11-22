@@ -221,3 +221,7 @@ footer.site small { display: block; margin-top: 22px; grid-column: 1 / -1; }
   .shots img, .js .how .steps li { transition: none; }
 }
 @media (max-width: 860px) { .hero-art { min-height: 480px; } .plx.stackwrap { left: -6px; bottom: 6px; } .facts { grid-template-columns: 1fr 1fr; } }
+/* Deck library pages (/decks/): a deck's cards as a two-column table. */
+table.cards { width: 100%; border-collapse: collapse; margin: 18px 0; }
+table.cards th, table.cards td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--outline); vertical-align: top; }
+table.cards th { font-size: .9rem; text-transform: uppercase; letter-spacing: .04em; }

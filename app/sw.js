@@ -1,7 +1,7 @@
 // Pocketful web: keeps the app's own files so it opens offline. It never touches anything outside /app/.
 // The build (vite.config.ts) puts the full file list and its hash here, so the first visit is enough to work offline.
-const FILES = ["/app/assets/index-BbW6ndYc.js","/app/assets/index-zkJyNiV-.css","/app/fonts/fredoka-600.ttf","/app/fonts/nunito-400.woff2","/app/fonts/nunito-600.woff2","/app/fonts/nunito-700.woff2","/app/fonts/nunito-800.woff2","/app/icon-192.png","/app/icon-512.png","/app/icon.svg","/app/","/app/manifest.webmanifest"]
-const CACHE = 'pocketful-app-98ba41464318'
+const FILES = ["/app/assets/index-BJ9Ks93h.js","/app/assets/index-Cy5ehmFF.css","/app/fonts/fredoka-600.ttf","/app/fonts/nunito-400.woff2","/app/fonts/nunito-600.woff2","/app/fonts/nunito-700.woff2","/app/fonts/nunito-800.woff2","/app/icon-192.png","/app/icon-512.png","/app/icon.svg","/app/","/app/manifest.webmanifest"]
+const CACHE = 'pocketful-app-fc70bc373856'
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())) })
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k.startsWith('pocketful-app-') && k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()))
